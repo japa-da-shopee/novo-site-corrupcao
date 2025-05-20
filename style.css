@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Roboto&display=swap');
+
+:root {
+    --primary-color: #000000;
+    --secondary-color: #000000;
+    --text-color: #000000;
+    --background-color: #ffffff;
+    --button-hover: #064b00;
+    --font-body: "Roboto", sans-serif;
+    --font-titulo: "Playfair Display", serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--font-body);
+}
+
+body {
+    background-color: var(--background-color);
+    color: var(--text-color);
+    line-height: 1.6;
+    padding: 20px;
+}
+
+header {
+    text-align: center;
+    padding: 20px;
+    background-color: #f1f1f1;
+}
+
+header h1 {
+    font-family: var(--font-titulo);
+    font-size: 3em;
+    margin-bottom: 10px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--primary-color);
+    font-weight: bold;
+    font-family: var(--font-titulo);
+}
+
+nav a:hover {
+    color: var(--button-hover);
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    margin: 20px 0;
+    border-radius: 10px;
+}
+
+main {
+    padding: 20px;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.conteudo {
+    margin-bottom: 40px;
+}
+
+h2 {
+    margin-bottom: 15px;
+    font-family: var(--font-titulo);
+    font-size: 2em;
+}
+
+h3 {
+    margin-top: 25px;
+    font-size: 1.4em;
+    font-family: var(--font-titulo);
+}
+
+p, li {
+    margin-top: 10px;
+    font-size: 1.1em;
+}
+
+ul {
+    padding-left: 20px;
+}
+
+.cta-button {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: var(--primary-color);
+    color: white;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.cta-button:hover {
+    background-color: var(--button-hover);
+}
+
+footer {
+    background-color: #f1f1f1;
+    text-align: center;
+    padding: 20px;
+    margin-top: 50px;
+}
+
+.cta-footer {
+    display: inline-block;
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
+.cta-footer:hover {
+    color: var(--button-hover);
+}
